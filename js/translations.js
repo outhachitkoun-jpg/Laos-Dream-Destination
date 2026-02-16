@@ -37,7 +37,19 @@ const translations = {
         "tours_title": "Adventure Tours in Laos",
         "tours_subtitle": "Explore the wonders of Laos with our carefully curated adventure tours. From spiritual temples to thrilling outdoor experiences, each tour is designed to create unforgettable memories.",
         "packages_title": "Multi-Day Tour Packages",
-        "tickets_title": "Book Bus & Train Tickets"
+        "tickets_title": "Book Bus & Train Tickets",
+        "book_your_ticket": "Book Your Ticket",
+        "form_instruction": "Fill out the form below to book your ticket. We will contact you to confirm the details and payment.",
+        "travel_date": "Travel Date",
+        "guests": "Number of Guests",
+        "selected_ticket": "Selected Ticket",
+        "full_name": "Full Name",
+        "email_address": "Email Address",
+        "phone_number": "WhatsApp / Phone",
+        "special_requests": "Special Requests / Notes",
+        "request_booking": "Request Booking",
+        "inquire_now": "Inquire Now",
+        "chat_to_book": "Chat to Book"
     },
     lo: {
         "nav_home": "ໜ້າທຳອິດ",
@@ -77,7 +89,19 @@ const translations = {
         "tours_title": "ທົວຜະຈົນໄພໃນລາວ",
         "tours_subtitle": "ສຳຫຼວດຄວາມມຫັດສະຈັນຂອງລາວດ້ວຍທົວຜະຈົນໄພທີ່ພວກເຮົາຄັດສັນມາຢ່າງດີ. ຕັ້ງແຕ່ວັດວາອາຮາມທີ່ສັກສິດ ຈົນເຖິງປະສົບການກາງແຈ້ງທີ່ຕື່ນເຕັ້ນ.",
         "packages_title": "ແພັກເກດທົວຫຼາຍມື້",
-        "tickets_title": "ຈອງປີ້ລົດເມ ແລະ ປີ້ລົດໄຟ"
+        "tickets_title": "ຈອງປີ້ລົດເມ ແລະ ປີ້ລົດໄຟ",
+        "book_your_ticket": "ຈອງປີ້ຂອງທ່ານ",
+        "form_instruction": "ກະລຸນາຕື່ມຂໍ້ມູນລຸ່ມນີ້ເພື່ອຈອງປີ້. ພວກເຮົາຈະຕິດຕໍ່ຫາທ່ານເພື່ອຢືນຢັນລາຍລະອຽດ ແລະ ການຊຳລະເງິນ.",
+        "travel_date": "ວັນທີເດີນທາງ",
+        "guests": "ຈຳນວນຜູ້ໂດຍສານ",
+        "selected_ticket": "ປີ້ທີ່ເລືອກ",
+        "full_name": "ຊື່ເຕັມ",
+        "email_address": "ທີ່ຢູ່ອີເມວ",
+        "phone_number": "WhatsApp / ເບີໂທ",
+        "special_requests": "ຄຳຮ້ອງຂໍເພີ່ມເຕີມ / ໝາຍເຫດ",
+        "request_booking": "ຮ້ອງຂໍການຈອງ",
+        "inquire_now": "ສອບຖາມຕອນນີ້",
+        "chat_to_book": "ສົນທະນາເພື່ອຈອງ"
     },
     zh: {
         "nav_home": "首页",
@@ -117,8 +141,21 @@ const translations = {
         "tours_title": "老挝探险之旅",
         "tours_subtitle": "通过我们精心策划的探险旅游探索老挝的奇迹。从精美的寺庙到刺激的户外体验，每次旅行都旨在创造难忘的回忆。",
         "packages_title": "多日旅游套餐",
-        "tickets_title": "预订巴士和火车票"
+        "tickets_title": "预订巴士和火车票",
+        "book_your_ticket": "预订您的票务",
+        "form_instruction": "请填写下方表格进行预订。我们将联系您确认详情和付款方式。",
+        "travel_date": "旅行日期",
+        "guests": "乘车人数",
+        "selected_ticket": "已选票务",
+        "full_name": "全名",
+        "email_address": "电子邮箱",
+        "phone_number": "WhatsApp / 电话",
+        "special_requests": "特殊要求 / 备注",
+        "request_booking": "提交预订请求",
+        "inquire_now": "立即咨询",
+        "chat_to_book": "通过聊天预订"
     }
+
 };
 
 function setLanguage(lang) {

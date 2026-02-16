@@ -392,48 +392,51 @@
             </div>
         </section>
 
-        <!-- Booking Form Section -->
         <section id="booking-form" class="booking-section">
             <div class="container">
                 <div class="plan-form">
-                    <h2>Book Your Ticket</h2>
-                    <p class="form-instruction">Fill out the form below to book your ticket. We will contact you to
-                        confirm the details and payment.</p>
+                    <h2 data-i18n="book_your_ticket">Book Your Ticket</h2>
+                    <p class="form-instruction" data-i18n="form_instruction">Fill out the form below to book your
+                        ticket. We will contact you to confirm the details and payment.</p>
 
                     <form onsubmit="submitBooking(event)">
                         <div class="plan-form__grid">
                             <div class="plan-form__field">
-                                <label>Selected Ticket</label>
+                                <label data-i18n="selected_ticket">Selected Ticket</label>
                                 <input type="text" id="selected-ticket-input" placeholder="Select a ticket above..."
-                                    readonly required>
+                                    data-i18n="selected_ticket" readonly required>
                             </div>
                             <div class="plan-form__field">
-                                <label>Travel Date</label>
+                                <label data-i18n="travel_date">Travel Date</label>
                                 <input type="date" id="travel-date" required>
                             </div>
                             <div class="plan-form__field">
-                                <label>Number of Passengers</label>
+                                <label data-i18n="guests">Number of Passengers</label>
                                 <input type="number" id="passenger-count" min="1" value="1" required>
                             </div>
                             <div class="plan-form__field">
-                                <label>Full Name</label>
-                                <input type="text" id="customer-name" placeholder="Your Name" required>
+                                <label data-i18n="full_name">Full Name</label>
+                                <input type="text" id="customer-name" placeholder="Your Name" data-i18n="full_name"
+                                    required>
                             </div>
                             <div class="plan-form__field">
-                                <label>Email Address</label>
-                                <input type="email" id="customer-email" placeholder="your@email.com" required>
+                                <label data-i18n="email_address">Email Address</label>
+                                <input type="email" id="customer-email" placeholder="your@email.com"
+                                    data-i18n="email_address" required>
                             </div>
                             <div class="plan-form__field">
-                                <label>WhatsApp / Phone</label>
-                                <input type="tel" id="customer-phone" placeholder="+856 ..." required>
+                                <label data-i18n="phone_number">WhatsApp / Phone</label>
+                                <input type="tel" id="customer-phone" placeholder="+856 ..." data-i18n="phone_number"
+                                    required>
                             </div>
                             <div class="plan-form__field plan-form__field--wide">
-                                <label>Special Requests / Notes</label>
-                                <textarea id="customer-notes" rows="3"
-                                    placeholder="Any specific requirements..."></textarea>
+                                <label data-i18n="special_requests">Special Requests / Notes</label>
+                                <textarea id="customer-notes" rows="3" placeholder="Any specific requirements..."
+                                    data-i18n="special_requests"></textarea>
                             </div>
                             <div class="plan-form__actions">
-                                <button type="submit" class="btn btn-booking">Request Booking</button>
+                                <button type="submit" class="btn btn-booking" data-i18n="request_booking">Request
+                                    Booking</button>
                             </div>
                         </div>
                     </form>

@@ -1141,6 +1141,13 @@ footer a:hover {
     padding: 1.5rem;
 }
 
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .route-info {
     display: flex;
     justify-content: space-between;
@@ -1321,5 +1328,166 @@ footer a:hover {
     .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
+    }
+}
+
+/* ========== FORM STYLING (CLEAN & ALIVE) ========== */
+.booking-section {
+    background: var(--bg-light);
+    padding: 6rem 0;
+}
+
+.plan-form {
+    background: var(--bg-white);
+    padding: 3.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 5px solid var(--primary);
+}
+
+.plan-form h2 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-instruction {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.plan-form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.plan-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.plan-form__field--wide {
+    grid-column: span 2;
+}
+
+.plan-form__field label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plan-form__field input,
+.plan-form__field select,
+.plan-form__field textarea {
+    padding: 14px 18px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition);
+    background: #fdfdfd;
+}
+
+.plan-form__field input:focus,
+.plan-form__field select:focus,
+.plan-form__field textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--bg-white);
+    box-shadow: 0 0 0 4px rgba(0, 91, 53, 0.1);
+}
+
+.plan-form__field input[readonly] {
+    background: #f5f5f5;
+    cursor: not-allowed;
+    border-color: #ddd;
+}
+
+.plan-form__actions {
+    grid-column: span 2;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-booking {
+    min-width: 250px;
+    padding: 15px 40px;
+}
+
+/* Tour Sidebar Form Adjustments */
+.booking-sidebar form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-sidebar input,
+.booking-sidebar select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.booking-sidebar input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 91, 53, 0.1);
+}
+
+/* Responsive Form */
+@media (max-width: 768px) {
+    .plan-form {
+        padding: 2rem 1.5rem;
+    }
+
+    .plan-form__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-form__field--wide,
+    .plan-form__actions {
+        grid-column: span 1;
+    }
+
+    .plan-form h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ========== ANIMATIONS ========== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

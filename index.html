@@ -401,30 +401,32 @@
             </div>
         </section>
 
-        <section id="contact" class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-                <div>
-                    <h3>Contact Information</h3>
-                    <p style="margin: 1rem 0;"><strong>Phone:</strong> +856 20 9845 7614</p>
-                    <p style="margin: 1rem 0;"><strong>Email:</strong> koun506@gmail.com</p>
-                    <p style="margin: 1rem 0;"><strong>Location:</strong> 123 Riverside Road, Luang Prabang, Laos</p>
-                </div>
-                <div
-                    style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <section id="contact" class="booking-section">
+            <div class="container reveal">
+                <h2 class="section-title" data-i18n="nav_contact">Get In Touch</h2>
+                <div class="plan-form">
                     <form>
-                        <input type="text" placeholder="Your Name" data-i18n="your_name"
-                            style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
-                        <input type="email" placeholder="Your Email" data-i18n="your_email"
-                            style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
-                        <textarea placeholder="Message" data-i18n="message"
-                            style="width: 100%; padding: 10px; height: 100px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
-                        <button class="btn" style="width: 100%; margin-top: 10px;" data-i18n="send_message">Send
-                            Message</button>
+                        <div class="plan-form__grid">
+                            <div class="plan-form__field">
+                                <label data-i18n="your_name">Your Name</label>
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="plan-form__field">
+                                <label data-i18n="your_email">Your Email</label>
+                                <input type="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="plan-form__field plan-form__field--wide">
+                                <label data-i18n="message">Message</label>
+                                <textarea placeholder="How can we help you?" rows="5" required></textarea>
+                            </div>
+                            <div class="plan-form__actions">
+                                <button type="submit" class="btn btn-booking" data-i18n="send_message">Send
+                                    Message</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
-
         </section>
     </main>
 
