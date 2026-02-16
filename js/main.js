@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
     revealElements.forEach(el => revealObserver.observe(el));
 
     // FAQ Accordion
-    const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         if (question) {
@@ -98,6 +97,26 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mainNav = document.getElementById('main-nav');
+
+    if (mobileMenuBtn && mainNav) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                mainNav.classList.remove('active');
+            });
+        });
+    }
 });
 
 // Object to store slide indices and intervals for each tour

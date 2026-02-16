@@ -310,6 +310,38 @@ body.zh-font {
     font-family: 'Oswald', sans-serif;
 }
 
+/* Hamburger Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1200;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 .main-nav ul li a::after {
     content: '';
     position: absolute;
@@ -423,6 +455,34 @@ body.zh-font {
     font-weight: 300;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     max-width: 600px;
+}
+
+/* ========== VIDEO SECTION ========== */
+.video-section {
+    padding: 6rem 0;
+    background: var(--bg-dark);
+    color: white;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 /* ========== ABOUT HERO ========== */
@@ -1147,9 +1207,119 @@ footer a:hover {
     text-align: center;
 }
 
-/* Booking Form Section */
-.booking-section {
-    background: var(--bg-light);
-    padding: 5rem 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+/* ========== MOBILE RESPONSIVENESS ========== */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar-inner {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lang-switcher {
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--bg-white);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1100;
+        transition: right 0.4s ease;
+        padding-top: 100px;
+    }
+
+    .main-nav.active {
+        right: 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .main-nav ul li a {
+        padding: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-overlay {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col h3 {
+        border-left: none;
+        padding-left: 0;
+        border-bottom: 2px solid var(--secondary);
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-overlay h1 {
+        font-size: 2.22rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
