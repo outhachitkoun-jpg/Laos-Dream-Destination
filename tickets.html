@@ -386,10 +386,10 @@
         <!-- Booking Form Section -->
         <section id="booking-form" class="booking-section">
             <div class="container">
-                <div class="plan-form" style="border-radius: var(--radius); padding: 4rem;">
+                <div class="plan-form">
                     <h2>Book Your Ticket</h2>
-                    <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.8);">Fill out the form below to book your
-                        ticket. We will contact you to confirm the details and payment.</p>
+                    <p class="form-instruction">Fill out the form below to book your ticket. We will contact you to
+                        confirm the details and payment.</p>
 
                     <form onsubmit="submitBooking(event)">
                         <div class="plan-form__grid">
@@ -424,7 +424,7 @@
                                     placeholder="Any specific requirements..."></textarea>
                             </div>
                             <div class="plan-form__actions">
-                                <button type="submit" class="btn">Request Booking</button>
+                                <button type="submit" class="btn btn-booking">Request Booking</button>
                             </div>
                         </div>
                     </form>
