@@ -50,7 +50,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-</head>
 
 <body>
 
@@ -65,10 +64,7 @@
                     <a href="tel:+8562098457614"><span class="contact-value">+856 20 9845 7614</span></a>
                 </div>
                 <div class="top-bar-item top-bar-contact">
-                    <svg class="top-bar-icon" viewBox="0 0 24 24">
-                        <path
-                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                    </svg>\
+                    </svg>
                     <a href="mailto:koun506@gmail.com"><span class="contact-value">koun506@gmail.com</span></a>
                 </div>
             </div>
@@ -82,13 +78,13 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="tours.html">Tours</a></li>
                     <li><a href="packages.html">Packages</a></li>
                     <li><a href="tickets.html">Tickets</a></li>
                     <li><a href="about.html">About</a></li>
-
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -334,6 +330,63 @@
             </div>
         </section>
 
+        <!-- CUSTOMER SUPPORT SECTION -->
+        <section id="support" class="container reveal" style="padding: 4rem 20px;">
+            <h2 class="section-title">Customer Support Center</h2>
+            <p style="text-align: center; color: #666; max-width: 800px; margin: -1.5rem auto 3rem;">We're here to help
+                you every step of the way. Reach out through any of our support channels for immediate assistance.</p>
+
+            <div class="support-grid">
+                <div class="support-card reveal reveal-delay-1">
+                    <span class="support-icon">💬</span>
+                    <h3>WhatsApp Support</h3>
+                    <p>Get instant answers to your questions about tours, bookings, and logistics from our local team.
+                    </p>
+                    <a href="https://wa.me/8562098457614" class="btn" style="border-radius: 8px;">Chat Now</a>
+                </div>
+                <div class="support-card reveal reveal-delay-2">
+                    <span class="support-icon">📧</span>
+                    <h3>Email Support</h3>
+                    <p>For detailed inquiries, tailor-made itineraries, or group booking requests, send us an email.</p>
+                    <a href="mailto:koun506@gmail.com" class="support-link">koun506@gmail.com</a>
+                </div>
+                <div class="support-card reveal reveal-delay-3">
+                    <span class="support-icon">📞</span>
+                    <h3>24/7 Hotline</h3>
+                    <p>Need urgent help while on the road? Our emergency support line is available 24 hours a day.</p>
+                    <a href="tel:+8562098457614" class="support-link">+856 20 9845 7614</a>
+                </div>
+            </div>
+
+            <div class="faq-container reveal">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <div class="faq-question">How do I book a tour or ticket?</div>
+                    <div class="faq-answer">Booking is easy! Simply browse our tours, click "View Details", and use the
+                        booking form or WhatsApp button. For bus/train tickets, visit our dedicated Tickets page. No
+                        deposit is usually required for local day tours.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is your cancellation policy?</div>
+                    <div class="faq-answer">We offer flexible cancellations. For most day tours, you can cancel up to 24
+                        hours in advance at no charge. For multi-day packages and train tickets, specific conditions may
+                        apply due to external bookings.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to pay in advance?</div>
+                    <div class="faq-answer">For day tours, we often accept payment on the day of the tour. For train
+                        tickets and multi-day packages, partial prepayment may be required to secure your reservations.
+                        We accept cash (USD/LAK) and bank transfers.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Are the tours private or group-based?</div>
+                    <div class="faq-answer">We offer both! Most of our featured day tours can be booked as private
+                        experiences for you and your travel companions. We also organize small group treks for those
+                        looking to meet other travelers.</div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
@@ -368,9 +421,11 @@
             </div>
             <div class="footer-col">
                 <h3>Quick Links</h3>
-                <p><a href="#home">Home</a></p>
-                <p><a href="#about">About Us</a></p>
-                <p><a href="#tours">Our Tours</a></p>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="tours.html">Our Tours</a></p>
+                <p><a href="packages.html">Tour Packages</a></p>
+                <p><a href="tickets.html">Book Tickets</a></p>
+                <p><a href="index.html#support">Support Center</a></p>
             </div>
             <div class="footer-col">
                 <h3>Support</h3>
