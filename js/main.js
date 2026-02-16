@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     revealElements.forEach(el => revealObserver.observe(el));
 
     // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         if (question) {
@@ -101,19 +102,30 @@ document.addEventListener('DOMContentLoaded', function () {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mainNav = document.getElementById('main-nav');
+    const navOverlay = document.querySelector('.nav-overlay');
 
     if (mobileMenuBtn && mainNav) {
-        mobileMenuBtn.addEventListener('click', () => {
+        const toggleMenu = () => {
+            const isOpen = mainNav.classList.toggle('active');
             mobileMenuBtn.classList.toggle('active');
-            mainNav.classList.toggle('active');
-        });
+            if (navOverlay) navOverlay.classList.toggle('active');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        };
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+
+        if (navOverlay) {
+            navOverlay.addEventListener('click', toggleMenu);
+        }
 
         // Close menu when a link is clicked
         const navLinks = mainNav.querySelectorAll('a');
         navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuBtn.classList.remove('active');
-                mainNav.classList.remove('active');
+            link.addEventListener('click', (e) => {
+                // Only close if it's a mobile view and menu is active
+                if (window.innerWidth <= 768 && mainNav.classList.contains('active')) {
+                    toggleMenu();
+                }
             });
         });
     }
