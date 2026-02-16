@@ -1,5 +1,5 @@
 /* ========== FONTS ========== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&family=Noto+Sans+Lao:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&display=swap');
 
 /* ========== VARIABLES & RESET ========== */
 :root {
@@ -159,6 +159,67 @@ h6 {
     padding: 0 24px;
     animation: none;
     /* Removed marquee */
+}
+
+.lang-switcher {
+    display: flex;
+    gap: 8px;
+    margin-left: 24px;
+    align-items: center;
+}
+
+.lang-btn {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    color: white;
+}
+
+.lang-btn:hover {
+    opacity: 1;
+    border-color: var(--secondary);
+}
+
+.lang-btn.active {
+    opacity: 1;
+    background: var(--secondary);
+    color: var(--primary) !important;
+    border-color: var(--secondary);
+}
+
+/* Lao Font Support */
+body.lao-font {
+    font-family: 'Noto Sans Lao', 'Roboto', sans-serif;
+}
+
+.lao-font h1,
+.lao-font h2,
+.lao-font h3,
+.lao-font h4,
+.lao-font .btn,
+.lao-font .main-nav ul li a {
+    font-family: 'Noto Sans Lao', 'Oswald', sans-serif;
+    letter-spacing: 0;
+}
+
+/* Chinese Font Support */
+body.zh-font {
+    font-family: 'Noto Sans SC', 'Roboto', sans-serif;
+}
+
+.zh-font h1,
+.zh-font h2,
+.zh-font h3,
+.zh-font h4,
+.zh-font .btn,
+.zh-font .main-nav ul li a {
+    font-family: 'Noto Sans SC', 'Oswald', sans-serif;
+    letter-spacing: 0;
 }
 
 .top-bar-item {

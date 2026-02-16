@@ -45,6 +45,11 @@
                     </svg>
                     <a href="mailto:koun506@gmail.com"><span class="contact-value">koun506@gmail.com</span></a>
                 </div>
+                <div class="lang-switcher">
+                    <a href="#" class="lang-btn active" id="lang-en">EN</a>
+                    <a href="#" class="lang-btn" id="lang-lo">ລາວ</a>
+                    <a href="#" class="lang-btn" id="lang-zh">CN</a>
+                </div>
             </div>
         </div>
         <div class="container nav-bar">
@@ -56,13 +61,13 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="tickets.html" class="active">Tickets</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html#support">Support</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="tours.html" data-i18n="nav_tours">Tours</a></li>
+                    <li><a href="packages.html" data-i18n="nav_packages">Packages</a></li>
+                    <li><a href="tickets.html" class="active" data-i18n="nav_tickets">Tickets</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="index.html#support" data-i18n="nav_support">Support</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -72,7 +77,7 @@
         <!-- Hero Section -->
         <section class="tickets-hero">
             <div class="container">
-                <h1>Book Bus & Train Tickets</h1>
+                <h1 data-i18n="tickets_title">Book Bus & Train Tickets</h1>
                 <p style="font-size: 1.2rem; opacity: 0.9;">Secure your travel across Laos with ease and comfort.</p>
             </div>
         </section>
@@ -467,6 +472,7 @@
         </svg>
     </a>
 
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script>
         function showTab(type) {

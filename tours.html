@@ -59,19 +59,24 @@
                     </svg>
                     <a href="mailto:koun506@gmail.com"><span class="contact-value">koun506@gmail.com</span></a>
                 </div>
+                <div class="lang-switcher">
+                    <a href="#" class="lang-btn active" id="lang-en">EN</a>
+                    <a href="#" class="lang-btn" id="lang-lo">ລາວ</a>
+                    <a href="#" class="lang-btn" id="lang-zh">CN</a>
+                </div>
             </div>
         </div>
         <div class="container nav-bar">
             <a href="index.html" class="logo">Laos Dream <span>Destination</span></a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="tours.html" class="active">Tours</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="tickets.html">Tickets</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html#support">Support</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="tours.html" class="active" data-i18n="nav_tours">Tours</a></li>
+                    <li><a href="packages.html" data-i18n="nav_packages">Packages</a></li>
+                    <li><a href="tickets.html" data-i18n="nav_tickets">Tickets</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="index.html#support" data-i18n="nav_support">Support</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -80,9 +85,11 @@
     <main>
         <section class="featured-tours" style="padding: 4rem 0;">
             <div class="container reveal">
-                <h1 style="text-align: center; font-size: 2.2rem; margin-bottom: 1rem; color: #2c3e50;">Adventure Tours
+                <h1 style="text-align: center; font-size: 2.2rem; margin-bottom: 1rem; color: #2c3e50;"
+                    data-i18n="tours_title">Adventure Tours
                     in Laos</h1>
-                <p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto 3rem;">Explore the wonders
+                <p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto 3rem;"
+                    data-i18n="tours_subtitle">Explore the wonders
                     of Laos with our carefully curated adventure tours. From spiritual temples to thrilling outdoor
                     experiences, each tour is designed to create unforgettable memories.</p>
                 <h2 class="section-title" style="margin-top: 0;">Explore Our Tour Packages</h2>
@@ -535,6 +542,7 @@
         </svg>
     </a>
 
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
 </body>
 
