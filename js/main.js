@@ -112,7 +112,10 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.style.overflow = isOpen ? 'hidden' : '';
         };
 
-        mobileMenuBtn.addEventListener('click', toggleMenu);
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleMenu();
+        });
 
         if (navOverlay) {
             navOverlay.addEventListener('click', toggleMenu);
