@@ -3,36 +3,36 @@
 
 /* ========== VARIABLES & RESET ========== */
 :root {
-    /* Green Discovery Laos Inspired Colors */
-    --primary: #005b35;
-    /* Deep Forest Green */
-    --primary-light: #007a48;
-    /* Lighter Green for hovers */
-    --secondary: #fcb900;
-    /* Vibrant Yellow/Orange Accent */
-    --secondary-hover: #e0a800;
+    /* Pro theme color palette */
+    --primary: #12344d;
+    /* Deep navy blue for a corporate feel */
+    --primary-light: #1f4f73;
+    /* Slightly lighter navy for hovers */
+    --secondary: #f5a623;
+    /* Muted amber accent */
+    --secondary-hover: #d48806;
 
-    --bg-light: #F4F5F7;
-    /* Very light grey for backgrounds */
-    --bg-white: #FFFFFF;
-    --bg-dark: #1a1a1a;
-    /* Dark, almost black */
+    --bg-light: #f5f7fa;
+    /* Soft light grey background */
+    --bg-white: #ffffff;
+    --bg-dark: #111827;
+    /* Dark blue‑grey for dark sections */
 
-    --text-main: #2c3e50;
-    /* Dark Slate Blue/Grey for text */
+    --text-main: #1f2933;
+    /* Neutral dark text */
     --text-light: #ffffff;
-    --text-muted: #7f8c8d;
+    --text-muted: #7b8794;
 
     /* Spacing & Layout */
     --container-width: 1200px;
     --header-height: 80px;
 
     /* Effects */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 4px 10px rgba(15, 23, 42, 0.12);
+    --shadow-lg: 0 12px 30px rgba(15, 23, 42, 0.16);
     --radius: 4px;
-    /* More squared/professional look */
+    /* Slightly squared corners keep it professional */
     --transition: all 0.3s ease-in-out;
 }
 
@@ -72,6 +72,18 @@ a {
     text-decoration: none;
     color: inherit;
     transition: color 0.2s ease;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 h1,
@@ -162,34 +174,47 @@ h6 {
 }
 
 .lang-switcher {
-    display: flex;
-    gap: 8px;
-    margin-left: 24px;
+    display: inline-flex;
     align-items: center;
+    gap: 6px;
+    margin-left: 24px;
+    padding: 3px 6px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.3);
+    /* Subtle pill behind language tabs */
+    backdrop-filter: blur(4px);
 }
 
 .lang-btn {
-    opacity: 0.6;
     cursor: pointer;
     transition: var(--transition);
     font-weight: 600;
-    font-size: 0.75rem;
-    padding: 2px 6px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 3px;
-    color: white;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(249, 250, 251, 0.8);
+}
+
+.lang-flag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 .lang-btn:hover {
-    opacity: 1;
-    border-color: var(--secondary);
+    color: #ffffff;
+    background: rgba(249, 250, 251, 0.08);
 }
 
 .lang-btn.active {
-    opacity: 1;
     background: var(--secondary);
-    color: var(--primary) !important;
-    border-color: var(--secondary);
+    color: var(--bg-dark) !important;
+    box-shadow: 0 0 0 1px rgba(17, 24, 39, 0.12);
 }
 
 /* Lao Font Support */

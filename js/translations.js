@@ -3,7 +3,6 @@ const translations = {
         "nav_home": "Home",
         "nav_tours": "Tours",
         "nav_packages": "Packages",
-        "nav_tickets": "Tickets",
         "nav_about": "About",
         "nav_support": "Support",
         "nav_contact": "Contact",
@@ -32,14 +31,11 @@ const translations = {
         "your_email": "Your Email",
         "message": "Message",
         "send_message": "Send Message",
-        "search_tickets": "Search Tickets",
         "book_now": "Book Now",
         "tours_title": "Adventure Tours in Laos",
         "tours_subtitle": "Explore the wonders of Laos with our carefully curated adventure tours. From spiritual temples to thrilling outdoor experiences, each tour is designed to create unforgettable memories.",
         "packages_title": "Multi-Day Tour Packages",
-        "tickets_title": "Book Bus & Train Tickets",
-        "book_your_ticket": "Book Your Ticket",
-        "form_instruction": "Fill out the form below to book your ticket. We will contact you to confirm the details and payment.",
+        "form_instruction": "Fill out the form below to book. We will contact you to confirm the details and payment.",
         "travel_date": "Travel Date",
         "guests": "Number of Guests",
         "selected_ticket": "Selected Ticket",
@@ -55,7 +51,6 @@ const translations = {
         "nav_home": "ໜ້າທຳອິດ",
         "nav_tours": "ການທ່ອງທ່ຽວ",
         "nav_packages": "ແພັກເກດ",
-        "nav_tickets": "ປີ້",
         "nav_about": "ກ່ຽວກັບ",
         "nav_support": "ຊ່ວຍເຫຼືອ",
         "nav_contact": "ຕິດຕໍ່",
@@ -84,14 +79,11 @@ const translations = {
         "your_email": "ອີເມວຂອງທ່ານ",
         "message": "ຂໍ້ຄວາມ",
         "send_message": "ສົ່ງຂໍ້ຄວາມ",
-        "search_tickets": "ຄົ້ນຫາປີ້",
         "book_now": "ຈອງຕອນນີ້",
         "tours_title": "ທົວຜະຈົນໄພໃນລາວ",
         "tours_subtitle": "ສຳຫຼວດຄວາມມຫັດສະຈັນຂອງລາວດ້ວຍທົວຜະຈົນໄພທີ່ພວກເຮົາຄັດສັນມາຢ່າງດີ. ຕັ້ງແຕ່ວັດວາອາຮາມທີ່ສັກສິດ ຈົນເຖິງປະສົບການກາງແຈ້ງທີ່ຕື່ນເຕັ້ນ.",
         "packages_title": "ແພັກເກດທົວຫຼາຍມື້",
-        "tickets_title": "ຈອງປີ້ລົດເມ ແລະ ປີ້ລົດໄຟ",
-        "book_your_ticket": "ຈອງປີ້ຂອງທ່ານ",
-        "form_instruction": "ກະລຸນາຕື່ມຂໍ້ມູນລຸ່ມນີ້ເພື່ອຈອງປີ້. ພວກເຮົາຈະຕິດຕໍ່ຫາທ່ານເພື່ອຢືນຢັນລາຍລະອຽດ ແລະ ການຊຳລະເງິນ.",
+        "form_instruction": "ກະລຸນາຕື່ມຂໍ້ມູນລຸ່ມນີ້ເພື່ອຈອງ. ພວກເຮົາຈະຕິດຕໍ່ຫາທ່ານເພື່ອຢືນຢັນລາຍລະອຽດ ແລະ ການຊຳລະເງິນ.",
         "travel_date": "ວັນທີເດີນທາງ",
         "guests": "ຈຳນວນຜູ້ໂດຍສານ",
         "selected_ticket": "ປີ້ທີ່ເລືອກ",
@@ -102,60 +94,7 @@ const translations = {
         "request_booking": "ຮ້ອງຂໍການຈອງ",
         "inquire_now": "ສອບຖາມຕອນນີ້",
         "chat_to_book": "ສົນທະນາເພື່ອຈອງ"
-    },
-    zh: {
-        "nav_home": "首页",
-        "nav_tours": "特色旅游",
-        "nav_packages": "旅游套餐",
-        "nav_tickets": "交通预订",
-        "nav_about": "关于我们",
-        "nav_support": "客户支持",
-        "nav_contact": "联系我们",
-        "hero_title": "探索老挝未被触及的灵魂",
-        "hero_subtitle": "与当地专家一起体验地道文化、壮丽自然和难忘的冒险。",
-        "hero_btn": "探索旅游项目",
-        "section_tours_title": "精选旅游",
-        "view_details": "查看详情",
-        "view_package_details": "查看套餐详情",
-        "support_title": "客户服务中心",
-        "support_subtitle": "我们全程为您提供帮助。如有需要，请随时通过我们的任何支持渠道联系我们。",
-        "whatsapp_support": "WhatsApp 支持",
-        "email_support": "邮件支持",
-        "hotline_support": "24/7 紧急热线",
-        "chat_now": "现在咨询",
-        "faq_title": "常见问题",
-        "get_in_touch": "保持联系",
-        "contact_info": "联系信息",
-        "footer_about": "为您打造难忘亚洲冒险之旅的值得信赖的当地伙伴。",
-        "quick_links": "快速链接",
-        "all_rights_reserved": "版权所有。",
-        "phone": "电话",
-        "email": "邮箱",
-        "location": "地点",
-        "your_name": "您的姓名",
-        "your_email": "您的邮箱",
-        "message": "留言内容",
-        "send_message": "发送信息",
-        "search_tickets": "搜索票务",
-        "book_now": "立即预订",
-        "tours_title": "老挝探险之旅",
-        "tours_subtitle": "通过我们精心策划的探险旅游探索老挝的奇迹。从精美的寺庙到刺激的户外体验，每次旅行都旨在创造难忘的回忆。",
-        "packages_title": "多日旅游套餐",
-        "tickets_title": "预订巴士和火车票",
-        "book_your_ticket": "预订您的票务",
-        "form_instruction": "请填写下方表格进行预订。我们将联系您确认详情和付款方式。",
-        "travel_date": "旅行日期",
-        "guests": "乘车人数",
-        "selected_ticket": "已选票务",
-        "full_name": "全名",
-        "email_address": "电子邮箱",
-        "phone_number": "WhatsApp / 电话",
-        "special_requests": "特殊要求 / 备注",
-        "request_booking": "提交预订请求",
-        "inquire_now": "立即咨询",
-        "chat_to_book": "通过聊天预订"
     }
-
 };
 
 function setLanguage(lang) {
@@ -182,16 +121,13 @@ function applyTranslations(lang) {
     document.body.classList.remove('lao-font', 'zh-font');
     if (lang === 'lo') {
         document.body.classList.add('lao-font');
-    } else if (lang === 'zh') {
-        document.body.classList.add('zh-font');
     }
 }
 
 function updateToggleUI(lang) {
     const btns = {
         'en': document.getElementById('lang-en'),
-        'lo': document.getElementById('lang-lo'),
-        'zh': document.getElementById('lang-zh')
+        'lo': document.getElementById('lang-lo')
     };
 
     // Clear all active classes
@@ -206,7 +142,11 @@ function updateToggleUI(lang) {
 }
 
 function initLanguage() {
-    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    let savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    if (savedLang === 'zh') {
+        savedLang = 'en';
+        localStorage.setItem('preferredLanguage', 'en');
+    }
     setLanguage(savedLang);
 }
 
@@ -215,8 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const langSelectors = [
         { id: 'lang-en', lang: 'en' },
-        { id: 'lang-lo', lang: 'lo' },
-        { id: 'lang-zh', lang: 'zh' }
+        { id: 'lang-lo', lang: 'lo' }
     ];
 
     langSelectors.forEach(selector => {
