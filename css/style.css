@@ -520,7 +520,7 @@ body.zh-font {
 .about-hero {
     height: 400px;
     /* Reduced specific height */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../picture/20250512234456_Featured-image-Nam-Song-River-in-Vang-Vieng-Laos.jpg") center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/tours/vangvieng/1.jpg") center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -886,7 +886,7 @@ footer a:hover {
 .tour-hero {
     height: 60vh;
     min-height: 400px;
-    background: linear-gradient(135deg, rgba(11, 26, 35, 0.4) 0%, rgba(26, 37, 48, 0.2) 100%), url('../picture/20250513001704_Featured-image-Royal-Palace-Museum-in-Luang-Prabang-Laos.jpg') center/cover;
+    background: linear-gradient(135deg, rgba(11, 26, 35, 0.4) 0%, rgba(26, 37, 48, 0.2) 100%), url('../images/tours/heritage/1.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -974,7 +974,7 @@ footer a:hover {
 .tour-hero {
     height: 60vh;
     min-height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../picture/20250513001704_Featured-image-Royal-Palace-Museum-in-Luang-Prabang-Laos.jpg') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/tours/heritage/1.jpg') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1081,7 +1081,7 @@ footer a:hover {
 .tickets-hero {
     height: 50vh;
     min-height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../picture/20250513000435_Pha_That_Luang_Vientiane_Laos.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/tours/vientiane/1.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
